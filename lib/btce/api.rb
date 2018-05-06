@@ -36,7 +36,7 @@
 
 module Btce
   class API
-    BTCE_DOMAIN = "btc-e.com"
+    BTCE_DOMAIN = "wex.nz"
     CURRENCY_PAIRS = %w(btc_eur
                         btc_rur
                         btc_usd
