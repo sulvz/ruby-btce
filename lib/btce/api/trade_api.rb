@@ -36,13 +36,10 @@
 
 module Btce
   class TradeAPI < API
-    if File.exists? 'btce-api-key.yml'
-      KEY = YAML::load File.open 'btce-api-key.yml'
-
-      class << self
-        def new_from_keyfile
-          new key: KEY["key"], secret: KEY["secret"]
-        end
+    
+    class << self
+      def new_from_keyfile
+        new key: ENV['WEX_API_KEY'], secret: ENV['WEX_API_SECRET']
       end
     end
 
