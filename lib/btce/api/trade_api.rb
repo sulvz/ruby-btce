@@ -51,6 +51,7 @@ module Btce
                     TransHistory
                     TradeHistory
                     OrderList
+                    OrderInfo
                     WithdrawCoin
                     ActiveOrders
                     Trade
