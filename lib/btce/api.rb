@@ -37,27 +37,58 @@
 module Btce
   class API
     BTCE_DOMAIN = "wex.nz"
-    CURRENCY_PAIRS = %w(btc_eur
+    CURRENCY_PAIRS = %w(btc_usd
                         btc_rur
-                        btc_usd
-                        dsh_btc
-                        eth_btc
-                        eth_ltc
-                        eth_rur
-                        eth_usd
-                        eur_rur
-                        eur_usd
+                        btc_eur
                         ltc_btc
-                        ltc_eur
-                        ltc_rur
                         ltc_usd
+                        ltc_rur
+                        ltc_eur
                         nmc_btc
                         nmc_usd
                         nvc_btc
                         nvc_usd
+                        usd_rur
+                        eur_usd
+                        eur_rur
                         ppc_btc
                         ppc_usd
-                        usd_rur)
+                        dsh_btc
+                        dsh_usd
+                        dsh_rur
+                        dsh_eur
+                        dsh_ltc
+                        dsh_eth
+                        dsh_zec
+                        eth_btc
+                        eth_usd
+                        eth_eur
+                        eth_ltc
+                        eth_rur
+                        eth_zec
+                        bch_usd
+                        bch_btc
+                        bch_rur
+                        bch_eur
+                        bch_ltc
+                        bch_eth
+                        bch_dsh
+                        bch_zec
+                        zec_btc
+                        zec_usd
+                        zec_ltc
+                        usdet_usd
+                        ruret_rur
+                        euret_eur
+                        btcet_btc
+                        ltcet_ltc
+                        ethet_eth
+                        nmcet_nmc
+                        nvcet_nvc
+                        ppcet_ppc
+                        dshet_dsh
+                        bchet_bch
+                        usdt_usd)
     CURRENCIES = CURRENCY_PAIRS.map {|pair| pair.split("_")}.flatten.uniq.sort
     MAX_DIGITS = {
       'btc_eur' => 5,
